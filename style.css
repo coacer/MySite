@@ -51,7 +51,7 @@ header a {
   color: #fafafa;
 }
 
-header i {
+header .fas {
   height: 90%;
   display: none;
   font-size: 30px;
@@ -306,7 +306,7 @@ footer > small {
     display: none;
   }
 
-  header i {
+  header .fas {
     display: block;
   }
 
