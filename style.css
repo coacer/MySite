@@ -120,15 +120,41 @@ section h2::after {
   line-height: 0;
 }
 
-.portfolio-img img {
+.portfolio-img .img {
   width: 300px;
   height: 250px;
   margin-right: 10px;
   margin-bottom: 10px;
   float: left;
+  background-size: cover;
+  background-position: center;
 }
 
-.portfolio-img img:nth-of-type(3n) {
+.img:nth-of-type(1) {
+  background-image: url(img/sketch.jpg);
+}
+
+.img:nth-of-type(2) {
+  background-image: url(img/websuku.png);
+}
+
+.img:nth-of-type(3) {
+  background-image: url(img/write.jpg);
+}
+
+.img:nth-of-type(4) {
+  background-image: url(img/webcamp.png);
+}
+
+.img:nth-of-type(5) {
+  background-image: url(img/talk.jpg);
+}
+
+.img:nth-of-type(6) {
+  background-image: url(img/webcamp-mother.png);
+}
+
+.portfolio-img .img:nth-of-type(3n) {
   margin-right: 0;
 }
 
@@ -326,17 +352,17 @@ footer > small {
     width: 90%;
   }
 
-  .portfolio-img > img {
+  .portfolio-img > .img {
     float: none;
     display: block;
     margin: 0 auto 10px;
   }
 
-  .portfolio-img > img:nth-of-type(3n) {
+  .portfolio-img > .img:nth-of-type(3n) {
     margin-right: auto;
   }
 
-  .portfolio-img > img:nth-of-type(2n-1) {
+  .portfolio-img > .img:nth-of-type(2n-1) {
     display: none;
   }
 
@@ -390,5 +416,9 @@ footer > small {
 
   .icons > h3 {
     padding: 20px 0 5px;
+  }
+
+  .icons > i:nth-of-type(1) {
+    margin-left: 28px;
   }
 }
